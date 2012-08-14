@@ -36,11 +36,9 @@
 - (void)initializeWithParams:(NSDictionary*)dict
 {
 	
-	self.nameLAbel.text = @"test name";
-	self.birthLabel.text = @"test birth date";
-	self.incom.text = @"incomText";
-	self.outcom.text = @"outcomm text";
-	self.diagnos.text = @"Idiot";
+	self.nameLAbel.text = [dict objectForKey:@"name"];
+	self.birthLabel.text = [NSString stringWithFormat:@"Дата рождения: %@",[dict objectForKey:@"birth"]];
+	self.diagnos.text = [NSString stringWithFormat:@"Диагноз: %@",[dict objectForKey:@"diagnos"]];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

@@ -8,12 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class ZPopoverController;
 @class DepartmentViewController;
 
 @interface ViewController : UIViewController <UISplitViewControllerDelegate, UIPopoverControllerDelegate>
 {
-	ZPopoverController *popoverController;
+	UIPopoverController* pc;
 	DepartmentViewController* depVC;
 }
 @property (unsafe_unretained, nonatomic) IBOutlet UIView *splitView;

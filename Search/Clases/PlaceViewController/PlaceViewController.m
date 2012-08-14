@@ -35,6 +35,7 @@
 
 - (void)viewDidUnload
 {
+	navigationItem = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -69,6 +70,8 @@
 {
 	if (currentArray == firstArray)
 	{
+//		self.navigationItem
+		navigationItem.title = @"Частные клиники";
 		currentArray = secondArray;
 		[tableView reloadData];
 	}
@@ -79,4 +82,8 @@
 }
 
 
+- (IBAction)backButtonTouched:(id)sender
+{
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"closePopover" object:nil];
+}
 @end

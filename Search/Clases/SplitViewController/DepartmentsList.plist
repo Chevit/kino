@@ -5,10 +5,199 @@
 	<key>1</key>
 	<dict>
 		<key>department</key>
-		<string>Маммология</string>
+		<string>Гепатология</string>
 		<key>patients</key>
 		<array>
-			<string>piu</string>
+			<dict>
+				<key>name</key>
+				<string>Иванов Василий Александрович</string>
+				<key>birth</key>
+				<string>11.02.1974</string>
+				<key>diagnos</key>
+				<string>Абсцесс печени</string>
+				<key>piu</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Гаргулиев Ашот Вахтангович</string>
+				<key>birth</key>
+				<string>03.06.1965</string>
+				<key>diagnos</key>
+				<string>Гемохроматоз</string>
+				<key>piu</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Сажина Анна Махийловна</string>
+				<key>birth</key>
+				<string>28.11.1932</string>
+				<key>diagnos</key>
+				<string>Цирроз печени</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Курин Евгений Дмитриевич</string>
+				<key>birth</key>
+				<string>21.02.1983</string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Махина Наталья Михайловна</string>
+				<key>birth</key>
+				<string>06.06.1972</string>
+				<key>diagnos</key>
+				<string>Гепатоз жировой</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Мульник Геннадий Романович</string>
+				<key>birth</key>
+				<string>01.12.1977</string>
+				<key>diagnos</key>
+				<string>Портальная гипергензия</string>
+				<key>piu</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Михайлова Валерия Аркадьевна</string>
+				<key>birth</key>
+				<string>24.07.1952</string>
+				<key>diagnos</key>
+				<string>Фруктоземия</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Мушков Роман Эрастович</string>
+				<key>birth</key>
+				<string>23.06.1961</string>
+				<key>diagnos</key>
+				<string>Цирроз печени</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Ганин Аркадий Иванович</string>
+				<key>birth</key>
+				<string>15.08.1981</string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность второй степени</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Илюшина Ирина Константиновна</string>
+				<key>birth</key>
+				<string>22.04.1959</string>
+				<key>diagnos</key>
+				<string>Крупноочаговый цирроз печени</string>
+				<key>details</key>
+				<string>Илюшина Ирина Константиновна/n/nДата рождения:/n22.04.1959/n/nДиагноз:/nКрупноочаговый цирроз печени </string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Иванов Василий Александрович</string>
+				<key>birth</key>
+				<string>11.02.1974</string>
+				<key>diagnos</key>
+				<string>Абсцесс печени</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Мимин Семен Васгенович</string>
+				<key>birth</key>
+				<string>21.09.1953</string>
+				<key>diagnos</key>
+				<string>Синдром портальной гипертензии</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Махмедов Рустам Карлович</string>
+				<key>birth</key>
+				<string>02.10.1975</string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность второй степени</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Манчкинов Захар Петрович</string>
+				<key>birth</key>
+				<string>04.11.1975</string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность второй степени</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Поречников Андрей Валентинович</string>
+				<key>birth</key>
+				<string>21.03.1958</string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность второй степени</string>
+				<key>piu</key>
+				<string></string>
+				<key>details</key>
+				<string>Поречников Андрей Валентинович/n/nДата рождения:/n21.03.1958/n/nДиагноз:/nПеченочная недостаточность второй степени, Гепатит С/n/nДругая информация:/nДиректор станции техобслуживания &quot;Эталон&quot;</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Кудин Андрей Васильевич</string>
+				<key>birth</key>
+				<string>11.03.1974</string>
+				<key>diagnos</key>
+				<string>Синдром портальной гипертензии</string>
+				<key>piu</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Багацкий Антон Александрович</string>
+				<key>birth</key>
+				<string>02.10.1975</string>
+				<key>piu</key>
+				<string></string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Стеблин Евгений Владимирович</string>
+				<key>birth</key>
+				<string>01.09.1966</string>
+				<key>piu</key>
+				<string></string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Кислица Сергей Иванович</string>
+				<key>birth</key>
+				<string>23.09.1974</string>
+				<key>piu</key>
+				<string></string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Месковенко Евгений Русланович</string>
+				<key>birth</key>
+				<string>04.09.1954</string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность</string>
+			</dict>
+			<dict>
+				<key>name</key>
+				<string>Рогозин Эдуард Витальевич</string>
+				<key>piu</key>
+				<string></string>
+				<key>birth</key>
+				<string>22.09.1984</string>
+				<key>diagnos</key>
+				<string>Печеночная недостаточность</string>
+			</dict>
 		</array>
 	</dict>
 	<key>2</key>

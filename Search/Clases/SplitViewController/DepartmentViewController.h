@@ -13,6 +13,7 @@
 	NSDictionary* source;
 	NSArray* keys;
 	NSInteger selectedDepartment;
+	NSMutableArray* currentPatients;
 }
 @property (unsafe_unretained, nonatomic) IBOutlet UITableView *leftTableView;
 @property (unsafe_unretained, nonatomic) IBOutlet UITableView *rightTableView;

@@ -14,5 +14,8 @@
 	NSArray* secondArray;
 	NSArray* currentArray;
 	
+	__unsafe_unretained IBOutlet UINavigationItem *navigationItem;
 }
+- (IBAction)backButtonTouched:(id)sender;
+
 @end

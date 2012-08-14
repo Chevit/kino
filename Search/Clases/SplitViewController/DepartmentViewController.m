@@ -8,6 +8,7 @@
 
 #import "DepartmentViewController.h"
 #import "PatientView.h"
+#import "PatientDetailsViewController.h"
 
 @interface DepartmentViewController ()
 
@@ -21,13 +22,31 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        source = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DepartmentsList" ofType:@"plist"]];
+        source = [NSDictionary dictionaryWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"DepartmentsList" ofType:@"plist"]];		
 		keys = [[source allKeys] sortedArrayUsingComparator:^NSComparisonResult(id obj1, id obj2) {
 			return [(NSString*)obj1 compare:obj2];
 		}];
 		selectedDepartment = 0;
+		currentPatients = [[[source objectForKey:[NSString stringWithFormat:@"%d",selectedDepartment+1]] objectForKey:@"patients"] mutableCopy];
+		[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(search) name:@"search" object:nil];
+		
     }
     return self;
+}
+
+- (void)search
+{
+	NSMutableArray* array = [NSMutableArray new];
+	for (NSDictionary* dict in currentPatients)
+	{
+		if ([dict objectForKey:@"piu"])
+		{
+			[array addObject:dict];
+		}
+	}
+	currentPatients = array;
+	rightTableView.contentOffset = CGPointMake(0, 0);
+	[rightTableView reloadData];
 }
 
 - (void)viewDidLoad
@@ -64,7 +83,7 @@
 	NSInteger result = 1;
 	if (tableView == rightTableView)
 	{
-		result = [[[source objectForKey:[keys objectAtIndex:selectedDepartment]] objectForKey:@"patients"] count];
+		result = [currentPatients count];
 	}
 	return result;
 }
@@ -90,13 +109,15 @@
 		{
 			NSArray* array = [[NSBundle mainBundle] loadNibNamed:@"PatientCellView" owner:self options:nil];
 			cell = [array lastObject];
-			[(PatientView*)cell initializeWithParams:nil];
+			[(PatientView*)cell initializeWithParams:[currentPatients objectAtIndex:indexPath.section]];
 			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-//			cell = [[PatientCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"person"  dictionary:nil];
+
 		}
-//		cell.textLabel.text = nil;
-//		NSArray* array = [[source objectForKey:[keys objectAtIndex:selectedDepartment]] objectForKey:@"patients"];
-//		cell.textLabel.text = [array objectAtIndex:indexPath.row];
+		else
+		{
+			[(PatientView*)cell initializeWithParams:[currentPatients objectAtIndex:indexPath.section]];
+			cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+		}
 	}
 	else if (tableView == leftTableView)
 	{
@@ -118,8 +139,25 @@
 	if (tableView == leftTableView)
 	{
 		selectedDepartment = [indexPath row];
+		currentPatients = [[[source objectForKey:[NSString stringWithFormat:@"%d",selectedDepartment+1]] objectForKey:@"patients"] mutableCopy];
 		[rightTableView reloadData];
 	}
+	else
+	{
+		PatientDetailsViewController* vc = [[PatientDetailsViewController alloc] initWithNibName:nil bundle:nil];
+		NSString* string = [[currentPatients objectAtIndex:indexPath.section] objectForKey:@"details"];
+		
+		unichar chr[1] = {'\n'};
+		NSString *cR = [NSString stringWithCharacters:(const unichar *)chr length:1];
+		
+		string = [string stringByReplacingOccurrencesOfString:@"/n" withString:cR];
+		
+		[vc view];
+		[vc.textView setText:string];
+		[vc piu];
+		[self presentModalViewController:vc animated:YES];
+	}
+	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
