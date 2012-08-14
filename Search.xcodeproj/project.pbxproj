@@ -24,6 +24,7 @@
 		FE7868CD15DAD598006FD4F8 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7868CC15DAD598006FD4F8 /* background.png */; };
 		FE7868D315DAEF77006FD4F8 /* PatientDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7868D115DAEF77006FD4F8 /* PatientDetailsViewController.m */; };
 		FE7868D415DAEF77006FD4F8 /* PatientDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7868D215DAEF77006FD4F8 /* PatientDetailsViewController.xib */; };
+		FE78690815DB03A9006FD4F8 /* search_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = FE78690715DB03A9006FD4F8 /* search_bar.png */; };
 		FEA73A1415CED247006441DA /* separator.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA73A1315CED247006441DA /* separator.png */; };
 		FEBF874515D03BDB00971139 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBF874315D03BDB00971139 /* FilterViewController.m */; };
 		FEBF874615D03BDB00971139 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEBF874415D03BDB00971139 /* FilterViewController.xib */; };
@@ -60,6 +61,7 @@
 		FE7868D015DAEF77006FD4F8 /* PatientDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PatientDetailsViewController.h; sourceTree = "<group>"; };
 		FE7868D115DAEF77006FD4F8 /* PatientDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientDetailsViewController.m; sourceTree = "<group>"; };
 		FE7868D215DAEF77006FD4F8 /* PatientDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientDetailsViewController.xib; sourceTree = "<group>"; };
+		FE78690715DB03A9006FD4F8 /* search_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_bar.png; sourceTree = "<group>"; };
 		FEA73A1315CED247006441DA /* separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = separator.png; sourceTree = "<group>"; };
 		FEBF874215D03BDB00971139 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		FEBF874315D03BDB00971139 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				FE7868CC15DAD598006FD4F8 /* background.png */,
 				FEBF874B15D0468300971139 /* button.png */,
 				FEBF874915D042C200971139 /* gender.png */,
+				FE78690715DB03A9006FD4F8 /* search_bar.png */,
 				FEBF875315D04AAB00971139 /* dislocureMark.png */,
 			);
 			path = Resources;
@@ -287,6 +290,7 @@
 				FEBF875415D04AAB00971139 /* dislocureMark.png in Resources */,
 				FE7868CD15DAD598006FD4F8 /* background.png in Resources */,
 				FE7868D415DAEF77006FD4F8 /* PatientDetailsViewController.xib in Resources */,
+				FE78690815DB03A9006FD4F8 /* search_bar.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
