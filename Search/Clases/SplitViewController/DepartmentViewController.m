@@ -156,8 +156,9 @@
 		[vc.textView setText:string];
 		[vc piu];
 		[self presentModalViewController:vc animated:YES];
+		[tableView deselectRowAtIndexPath:indexPath animated:YES];
+
 	}
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 @end
