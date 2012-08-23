@@ -19,8 +19,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) 
 	{
-		secondArray = @[@"Гиппократ", @"Медицентр", @"Клиника имени Амосова", @"Биотек", @"Все Клиники..."];
-		firstArray = @[@"Частные клиники",@"Государственные клиники",@"Все"];
+//		secondArray = @[@"Гиппократ", @"Медицентр", @"Клиника имени Амосова", @"Биотек", @"Все Клиники..."];
+		firstArray = @[@"Ограбления",@"Разбойные нападения",@"Убийства",@"Изнасилования",@"Несчастные случаи",@"Хулиганство"];
 		currentArray = firstArray;
     }
     return self;
@@ -68,19 +68,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	if (currentArray == firstArray)
-	{
-//		self.navigationItem
-		navigationItem.title = @"Частные клиники";
-		currentArray = secondArray;
-		double delayInSeconds = 0.2;
-		dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
-		dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
-			[tableView reloadData];
-		});
-		
-	}
-	else
 	{
 		[[NSNotificationCenter defaultCenter] postNotificationName:@"piu" object:nil];
 	}

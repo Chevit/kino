@@ -134,31 +134,35 @@
 
 #pragma mark - TableViewDelegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+//- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
+//{
+//	if (tableView == leftTableView)
+//	{
+//		selectedDepartment = [indexPath row];
+//		currentPatients = [[[source objectForKey:[NSString stringWithFormat:@"%d",selectedDepartment+1]] objectForKey:@"patients"] mutableCopy];
+//		[rightTableView reloadData];
+//	}
+//	else
+//	{
+//		PatientDetailsViewController* vc = [[PatientDetailsViewController alloc] initWithNibName:nil bundle:nil];
+//		NSString* string = [[currentPatients objectAtIndex:indexPath.section] objectForKey:@"details"];
+//		
+//		unichar chr[1] = {'\n'};
+//		NSString *cR = [NSString stringWithCharacters:(const unichar *)chr length:1];
+//		
+//		string = [string stringByReplacingOccurrencesOfString:@"/n" withString:cR];
+//		
+//		[vc view];
+//		[vc.textView setText:string];
+//		[vc piu];
+//		[self presentModalViewController:vc animated:YES];
+//		[tableView deselectRowAtIndexPath:indexPath animated:YES];
+//
+//	}
+//}
+
+- (IBAction)closeButtonTouched:(id)sender
 {
-	if (tableView == leftTableView)
-	{
-		selectedDepartment = [indexPath row];
-		currentPatients = [[[source objectForKey:[NSString stringWithFormat:@"%d",selectedDepartment+1]] objectForKey:@"patients"] mutableCopy];
-		[rightTableView reloadData];
-	}
-	else
-	{
-		PatientDetailsViewController* vc = [[PatientDetailsViewController alloc] initWithNibName:nil bundle:nil];
-		NSString* string = [[currentPatients objectAtIndex:indexPath.section] objectForKey:@"details"];
-		
-		unichar chr[1] = {'\n'};
-		NSString *cR = [NSString stringWithCharacters:(const unichar *)chr length:1];
-		
-		string = [string stringByReplacingOccurrencesOfString:@"/n" withString:cR];
-		
-		[vc view];
-		[vc.textView setText:string];
-		[vc piu];
-		[self presentModalViewController:vc animated:YES];
-		[tableView deselectRowAtIndexPath:indexPath animated:YES];
-
-	}
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"closeButtonTouched" object:nil];
 }
-
 @end

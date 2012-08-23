@@ -45,6 +45,7 @@
 						<string key="NSFrame">{{0, 88}, {357, 312}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">3</int>
@@ -73,7 +74,7 @@
 						<array key="IBUIItems">
 							<object class="IBUINavigationItem" id="664799448">
 								<reference key="IBUINavigationBar" ref="1037235798"/>
-								<string key="IBUITitle">Поиск...</string>
+								<string key="IBUITitle">Сводка</string>
 								<object class="IBUIBarButtonItem" key="IBUILeftBarButtonItem" id="767144253">
 									<string key="IBUITitle">Back</string>
 									<string key="targetRuntimeIdentifier">IBIPadFramework</string>

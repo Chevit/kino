@@ -17,5 +17,6 @@
 }
 @property (unsafe_unretained, nonatomic) IBOutlet UITableView *leftTableView;
 @property (unsafe_unretained, nonatomic) IBOutlet UITableView *rightTableView;
+- (IBAction)closeButtonTouched:(id)sender;
 
 @end

@@ -21,14 +21,18 @@
 {
     [super viewDidLoad];
 	 
-	
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(closeButtonTouched) name:@"closeButtonTouched" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(piu) name:@"closePopover" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(search) name:@"search" object:nil];
 	self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern.png"]];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showMore:) name:@"piu" object:nil];
 	// Do any additional setup after loading the view, typically from a nib.
 }
-
+- (void)closeButtonTouched
+{
+	[depVC.view removeFromSuperview];
+	depVC = nil;
+}
 - (void)search
 {
 	[pc dismissPopoverAnimated:YES];
@@ -82,6 +86,10 @@
 {
 	[pc dismissPopoverAnimated:YES];	
 
+	if (depVC)
+	{
+		[self closeButtonTouched];
+	}
 	
 	depVC = [[DepartmentViewController alloc] initWithNibName:@"DepartmrntViewController" bundle:nil];
 

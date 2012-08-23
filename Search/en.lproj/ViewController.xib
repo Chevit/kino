@@ -100,7 +100,7 @@
 						<int key="IBUIContentHorizontalAlignment">0</int>
 						<int key="IBUIContentVerticalAlignment">0</int>
 						<int key="IBUIButtonType">1</int>
-						<string key="IBUINormalTitle">Место</string>
+						<string key="IBUINormalTitle">Сводка</string>
 						<reference key="IBUIHighlightedTitleColor" ref="135718892"/>
 						<reference key="IBUINormalTitleColor" ref="320347196"/>
 						<reference key="IBUINormalTitleShadowColor" ref="763323439"/>
@@ -113,6 +113,7 @@
 						<string key="NSFrame">{{667, 20}, {81, 37}}</string>
 						<reference key="NSSuperview" ref="766721923"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBIPadFramework</string>

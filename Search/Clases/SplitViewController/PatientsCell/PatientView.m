@@ -9,11 +9,12 @@
 #import "PatientView.h"
 
 @implementation PatientView
-@synthesize outcom;
-@synthesize diagnos;
+
+
 @synthesize nameLAbel;
-@synthesize birthLabel;
-@synthesize incom;
+@synthesize dateLabel;
+
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -35,10 +36,8 @@
 
 - (void)initializeWithParams:(NSDictionary*)dict
 {
-	
 	self.nameLAbel.text = [dict objectForKey:@"name"];
-	self.birthLabel.text = [NSString stringWithFormat:@"Дата рождения: %@",[dict objectForKey:@"birth"]];
-	self.diagnos.text = [NSString stringWithFormat:@"Диагноз: %@",[dict objectForKey:@"diagnos"]];
+	self.dateLabel.text = [dict objectForKey:@"date"];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated
