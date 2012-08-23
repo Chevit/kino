@@ -20,6 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	 
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(piu) name:@"closePopover" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(search) name:@"search" object:nil];
