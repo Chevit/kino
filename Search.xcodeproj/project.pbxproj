@@ -10,6 +10,8 @@
 		FE03BE2515CEBFA900C2E3E9 /* DepartmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE03BE2415CEBFA900C2E3E9 /* DepartmentViewController.m */; };
 		FE03BE2B15CEC84000C2E3E9 /* DepartmentsList.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE03BE2A15CEC84000C2E3E9 /* DepartmentsList.plist */; };
 		FE03BE2D15CECB7A00C2E3E9 /* DepartmrntViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE03BE2C15CECB7A00C2E3E9 /* DepartmrntViewController.xib */; };
+		FE0D27AB1619C3EE0094852B /* sbr_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0D27A91619C3EE0094852B /* sbr_logo.png */; };
+		FE0D27AC1619C3EE0094852B /* sbr.png in Resources */ = {isa = PBXBuildFile; fileRef = FE0D27AA1619C3EE0094852B /* sbr.png */; };
 		FE25B3FE15AB7817002A3A90 /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE25B3FC15AB7817002A3A90 /* PlaceViewController.m */; };
 		FE25B3FF15AB7817002A3A90 /* PlaceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE25B3FD15AB7817002A3A90 /* PlaceViewController.xib */; };
 		FE5ADE8015AB5CA80040A94A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE5ADE7F15AB5CA80040A94A /* UIKit.framework */; };
@@ -40,6 +42,8 @@
 		FE03BE2415CEBFA900C2E3E9 /* DepartmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepartmentViewController.m; sourceTree = "<group>"; };
 		FE03BE2A15CEC84000C2E3E9 /* DepartmentsList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DepartmentsList.plist; sourceTree = "<group>"; };
 		FE03BE2C15CECB7A00C2E3E9 /* DepartmrntViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DepartmrntViewController.xib; sourceTree = "<group>"; };
+		FE0D27A91619C3EE0094852B /* sbr_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sbr_logo.png; sourceTree = "<group>"; };
+		FE0D27AA1619C3EE0094852B /* sbr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sbr.png; sourceTree = "<group>"; };
 		FE25B3FB15AB7817002A3A90 /* PlaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
 		FE25B3FC15AB7817002A3A90 /* PlaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
 		FE25B3FD15AB7817002A3A90 /* PlaceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlaceViewController.xib; sourceTree = "<group>"; };
@@ -190,6 +194,8 @@
 				FE7868CC15DAD598006FD4F8 /* background.png */,
 				FEBF874B15D0468300971139 /* button.png */,
 				FEBF874915D042C200971139 /* gender.png */,
+				FE0D27A91619C3EE0094852B /* sbr_logo.png */,
+				FE0D27AA1619C3EE0094852B /* sbr.png */,
 				FE78690715DB03A9006FD4F8 /* search_bar.png */,
 				FEBF875315D04AAB00971139 /* dislocureMark.png */,
 			);
@@ -291,6 +297,8 @@
 				FE7868CD15DAD598006FD4F8 /* background.png in Resources */,
 				FE7868D415DAEF77006FD4F8 /* PatientDetailsViewController.xib in Resources */,
 				FE78690815DB03A9006FD4F8 /* search_bar.png in Resources */,
+				FE0D27AB1619C3EE0094852B /* sbr_logo.png in Resources */,
+				FE0D27AC1619C3EE0094852B /* sbr.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
