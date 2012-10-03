@@ -53,7 +53,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+	return YES;
 }
 
 - (IBAction)placeButtonTouched:(UIButton*)sender
@@ -73,11 +73,11 @@
 
 - (IBAction)filterButtonTouched:(UIButton*)sender
 {
-	FilterViewController *contentViewController = [[FilterViewController alloc] initWithNibName:nil bundle:nil];
-	
-	pc = [[UIPopoverController alloc] initWithContentViewController:contentViewController];
-	[pc presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
-	pc.delegate = self;
+//	FilterViewController *contentViewController = [[FilterViewController alloc] initWithNibName:nil bundle:nil];
+//	
+//	pc = [[UIPopoverController alloc] initWithContentViewController:contentViewController];
+//	[pc presentPopoverFromRect:sender.frame inView:self.view permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+//	pc.delegate = self;
 	
 	
 }
@@ -92,8 +92,8 @@
 	}
 	
 	depVC = [[DepartmentViewController alloc] initWithNibName:@"DepartmrntViewController" bundle:nil];
-
-	depVC.view.frame = CGRectMake(0, 100, 786, 904);
+	CGRect rect = self.view.bounds;
+	depVC.view.frame = CGRectMake(0, 100, rect.size.width, rect.size.height - 100);
 	[self.view addSubview:depVC.view];
 	
 }
