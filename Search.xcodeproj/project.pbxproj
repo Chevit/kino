@@ -27,6 +27,7 @@
 		FE7868D315DAEF77006FD4F8 /* PatientDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7868D115DAEF77006FD4F8 /* PatientDetailsViewController.m */; };
 		FE7868D415DAEF77006FD4F8 /* PatientDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE7868D215DAEF77006FD4F8 /* PatientDetailsViewController.xib */; };
 		FE78690815DB03A9006FD4F8 /* search_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = FE78690715DB03A9006FD4F8 /* search_bar.png */; };
+		FE7D2FE1161C0AFC00EB252C /* close_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = FE7D2FE0161C0AFC00EB252C /* close_btn.png */; };
 		FEA73A1415CED247006441DA /* separator.png in Resources */ = {isa = PBXBuildFile; fileRef = FEA73A1315CED247006441DA /* separator.png */; };
 		FEBF874515D03BDB00971139 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FEBF874315D03BDB00971139 /* FilterViewController.m */; };
 		FEBF874615D03BDB00971139 /* FilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEBF874415D03BDB00971139 /* FilterViewController.xib */; };
@@ -66,6 +67,7 @@
 		FE7868D115DAEF77006FD4F8 /* PatientDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PatientDetailsViewController.m; sourceTree = "<group>"; };
 		FE7868D215DAEF77006FD4F8 /* PatientDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PatientDetailsViewController.xib; sourceTree = "<group>"; };
 		FE78690715DB03A9006FD4F8 /* search_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search_bar.png; sourceTree = "<group>"; };
+		FE7D2FE0161C0AFC00EB252C /* close_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_btn.png; sourceTree = "<group>"; };
 		FEA73A1315CED247006441DA /* separator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = separator.png; sourceTree = "<group>"; };
 		FEBF874215D03BDB00971139 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		FEBF874315D03BDB00971139 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				FE5ADEEB15AB727D0040A94A /* background-pattern.png */,
 				FE7868CC15DAD598006FD4F8 /* background.png */,
 				FEBF874B15D0468300971139 /* button.png */,
+				FE7D2FE0161C0AFC00EB252C /* close_btn.png */,
 				FE0D279B1619C23E0094852B /* sbr_logo.png */,
 				FE0D27981619BEBF0094852B /* sbr.png */,
 				FEBF874915D042C200971139 /* gender.png */,
@@ -299,6 +302,7 @@
 				FE78690815DB03A9006FD4F8 /* search_bar.png in Resources */,
 				FE0D27991619BEBF0094852B /* sbr.png in Resources */,
 				FE0D279C1619C23E0094852B /* sbr_logo.png in Resources */,
+				FE7D2FE1161C0AFC00EB252C /* close_btn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

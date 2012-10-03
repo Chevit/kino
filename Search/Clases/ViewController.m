@@ -23,9 +23,16 @@
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(piu) name:@"closePopover" object:nil];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(search) name:@"search" object:nil];
+	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(asdasd) name:@"closeDetails" object:nil];
 	self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background-pattern.png"]];
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showMore:) name:@"piu" object:nil];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)asdasd
+{
+	[depVC.view removeFromSuperview];
+	depVC = nil;
 }
 
 - (void)search
@@ -48,7 +55,7 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-	return UIInterfaceOrientationIsPortrait(interfaceOrientation);
+	return YES;
 }
 
 - (IBAction)placeButtonTouched:(UIButton*)sender
@@ -84,7 +91,13 @@
 	
 	depVC = [[DepartmentViewController alloc] initWithNibName:@"DepartmrntViewController" bundle:nil];
 
-	depVC.view.frame = CGRectMake(0, 100, 786, 904);
+	CGRect rect = [[UIScreen mainScreen] bounds];
+	UIDeviceOrientation asd  = [[UIDevice currentDevice] orientation];
+	
+	CGFloat max = MAX(rect.size.width, rect.size.height);
+	CGFloat min = MIN(rect.size.width, rect.size.height);
+	
+	depVC.view.frame = CGRectMake(0, 100, UIInterfaceOrientationIsLandscape(asd)?max:min, (UIInterfaceOrientationIsLandscape(asd)?min:max) - 120);
 	[self.view addSubview:depVC.view];
 	
 }

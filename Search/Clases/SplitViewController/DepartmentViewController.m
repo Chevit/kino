@@ -161,4 +161,8 @@
 	}
 }
 
+- (IBAction)closeButtonTouched:(id)sender
+{
+	[[NSNotificationCenter defaultCenter] postNotificationName:@"closeDetails" object:nil];
+}
 @end
